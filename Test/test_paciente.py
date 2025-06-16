@@ -8,7 +8,7 @@ class TestPaciente(unittest.TestCase):
         self.assertEqual(paciente.obtener_dni(), "12345678")
         self.assertIn("George Russell", str(paciente))
         self.assertIn("12345678", str(paciente))
-        self.assertIn("01/01/1990", str(paciente))
+        self.assertIn("15/02/1998", str(paciente))
 
     def test_datos_con_espacios_son_limpiados(self):
         paciente = Paciente("  Ana Gómez  ", "  98765432  ", " 02/02/1985 ")

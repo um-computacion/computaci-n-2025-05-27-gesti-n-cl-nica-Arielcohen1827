@@ -8,7 +8,7 @@ class TestTurno(unittest.TestCase):
 
     def setUp(self):
         self.paciente = Paciente("Pepito Juan", "12345678", "17/07/1977")
-        self.medico = Medico("Dr. Juan Pepito", "MAT11111")
+        self.medico = Medico("Dr. Juan Pepito", "11111")
         self.pediatria = Especialidad("Pediatria", ["lunes", "miercoles", "viernes"])
         self.medico.agregar_especialidad(self.pediatria)
         self.fecha_hora = datetime(2025, 6, 16, 14, 30)
